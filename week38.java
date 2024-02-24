@@ -1,7 +1,9 @@
-
+import tools.week38AdvCalc;
+import tools.week38SciCalc;
 
 public class week38 {
     public static void main(String[] args) {
+        week38AdvCalc ac = new week38AdvCalc();
         week38SciCalc sc = new week38SciCalc();
         int a=sc.add(5,4);
         int b=sc.sub(9,3);
