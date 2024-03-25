@@ -1,4 +1,4 @@
-import java.util.*;
+// import java.util.*;
 @FunctionalInterface
 interface A{
     int init(int a);
