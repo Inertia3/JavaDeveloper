@@ -30,7 +30,6 @@ public class Week602Stream {
             .filter(n-> n%2==0)
             .map(n-> n*2)
             .reduce(0,(c,e) -> (c+e));
-
         System.out.println(result);
     }
 }
