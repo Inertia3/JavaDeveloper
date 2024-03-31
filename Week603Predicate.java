@@ -14,6 +14,19 @@ public class Week603Predicate {
         // therefore we can use lambda expression here 
         // we can also remove the type casting part if we have only one variable
 
+        // Predicate<Integer> p = new Predicate<Integer>() {
+
+        //     @Override
+        //     public boolean test(Integer t) {
+        //         if(t%2 ==0)
+        //         return true;
+        //         else 
+        //         return
+        //         false;
+        //     }
+            
+        // };
+
         Predicate<Integer> p = (Integer t) ->  {
                 if(t%2==0)
                    return true;
@@ -29,9 +42,7 @@ public class Week603Predicate {
         //     }
         // };
 
-        Function<Integer, Integer> fun = (Integer t) -> {
-                return t*2;
-        };
+        Function<Integer, Integer> fun = t -> t * 2;
         // since Function is a functional interface we can use lambda expression here
         int result = list.stream()
             // .filter(n-> n%2==0)
